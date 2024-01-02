@@ -201,6 +201,7 @@ Name | Description
 ***Microsoft Entity Framework Core*** | *cross-platform Object-Relational Mapping (ORM) framework*
 ***Serilog with Sensitive Enrichers*** |  *library that provides a flexible and expressive logging API*
 ***Swashbuckle*** | *generate interactive API documentation*
+***xUnit*** | *testing framework for the .NET ecosystemn*
 
 ### How to run it ?
 
@@ -210,4 +211,4 @@ Name | Description
 * Hit the run button and wait for the browser to pop up with swagger UI
 
 TODO:
-***Tests***
+***Add more tests***
