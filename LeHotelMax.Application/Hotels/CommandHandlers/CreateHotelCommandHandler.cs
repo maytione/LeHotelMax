@@ -8,7 +8,7 @@ using MediatR;
 
 namespace LeHotelMax.Application.Hotels.CommandHandlers
 {
-    internal class CreateHotelCommandHandler : IRequestHandler<CreateHotelCommand, OperationResult<HotelDto>>
+    public class CreateHotelCommandHandler : IRequestHandler<CreateHotelCommand, OperationResult<HotelDto>>
     {
         private readonly IHotelRepository _hotelRepository;
         private readonly IMapper _mapper;
@@ -25,6 +25,12 @@ namespace LeHotelMax.Application.Hotels.CommandHandlers
 
             try
             {
+
+                if (request is null)
+                {
+                    throw new Exception(HotelErrorMessages.HotelCommandQueryNull);
+                }
+
                 // Search for existing hotel with required ID
                 var data = await _hotelRepository.GetHotelByNameAsync(request.Name!, cancellationToken);
 
@@ -37,7 +43,7 @@ namespace LeHotelMax.Application.Hotels.CommandHandlers
                 }
 
                 // create new hotel from request
-                var hotel = _mapper.Map(request, data) ?? throw new Exception("Something went wrong");
+                var hotel = _mapper.Map(request, data);// ?? throw new Exception("Something went wrong");
 
                 // execute update
                 var newHotel = await _hotelRepository.AddHotelAsync(hotel, cancellationToken);
@@ -48,8 +54,8 @@ namespace LeHotelMax.Application.Hotels.CommandHandlers
             catch (Exception ex)
             {
                 // catch any error and map to our error response
-                result.AddError(ErrorCode.UpdateError,
-                      string.Format(HotelErrorMessages.HotelUpdateError, request.Id, ex.Message));
+                result.AddError(ErrorCode.CreateError,
+                      string.Format(HotelErrorMessages.HotelUpdateError, request?.Id, ex.Message));
             }
 
             return result;

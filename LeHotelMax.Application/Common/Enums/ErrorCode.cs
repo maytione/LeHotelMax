@@ -13,6 +13,7 @@ namespace LeHotelMax.Application.Common.Enums
         NotFound = 404,
         UpdateError = 405,
         DeleteError = 406,
+        CreateError = 407,
         ServerError = 500,
         UnknownError = 999,
         

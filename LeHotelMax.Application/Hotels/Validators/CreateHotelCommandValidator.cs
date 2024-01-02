@@ -13,7 +13,7 @@ namespace LeHotelMax.Application.Hotels.Validators
                 .MinimumLength(1).WithMessage("Hotel name can't be that short");
 
             RuleFor(p => p.Price)
-                .GreaterThan(0).WithMessage("Hotel price must be greather than 0");
+                .GreaterThan(0).WithMessage("Hotel price must be greater than 0");
 
             RuleFor(p => p.GeoLocation!)
                  .NotNull().WithMessage("Hotel Geo Location must be provided")

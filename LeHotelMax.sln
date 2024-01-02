@@ -21,6 +21,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 		README.md = README.md
 	EndProjectSection
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LeHotelMax.Tests", "LeHotelMax.Tests\LeHotelMax.Tests.csproj", "{E7471E6A-B171-4975-A046-5E84818A77C6}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -43,6 +45,10 @@ Global
 		{368EBCCB-EE79-45C1-A31A-4C4AC46C0000}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{368EBCCB-EE79-45C1-A31A-4C4AC46C0000}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{368EBCCB-EE79-45C1-A31A-4C4AC46C0000}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E7471E6A-B171-4975-A046-5E84818A77C6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E7471E6A-B171-4975-A046-5E84818A77C6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E7471E6A-B171-4975-A046-5E84818A77C6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E7471E6A-B171-4975-A046-5E84818A77C6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -52,6 +58,7 @@ Global
 		{4A6A46BE-9349-475B-BA5B-5357DB5F4CDC} = {F200D26F-1E23-4B9D-85CA-3871132E3092}
 		{3C29B085-E4CE-4882-B088-3A36D2187F3C} = {F200D26F-1E23-4B9D-85CA-3871132E3092}
 		{368EBCCB-EE79-45C1-A31A-4C4AC46C0000} = {F200D26F-1E23-4B9D-85CA-3871132E3092}
+		{E7471E6A-B171-4975-A046-5E84818A77C6} = {42406AE8-1A09-434F-8833-B6566E1BF7EB}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {FED89885-92D8-4895-8BC8-E098837775E0}

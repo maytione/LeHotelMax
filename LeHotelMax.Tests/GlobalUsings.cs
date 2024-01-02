@@ -1,0 +1,12 @@
+global using Xunit;
+global using AutoMapper;
+global using Moq;
+global using LeHotelMax.Domain.Aggregates;
+global using LeHotelMax.Domain.Aggregates.ValueObjects;
+global using LeHotelMax.Application.Common.Models;
+global using LeHotelMax.Application.Hotels;
+global using LeHotelMax.Application.Hotels.Command;
+global using LeHotelMax.Application.Hotels.CommandHandlers;
+global using LeHotelMax.Application.Hotels.Dtos;
+global using LeHotelMax.Application.Hotels.Interfaces;
+global using LeHotelMax.Application.Hotels.MappingProfiles;
